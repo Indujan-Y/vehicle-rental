@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "vehicle-rental": "file:"
+  },
+  "name": "vehicle-rental",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "concurrently \"cd backend\" \"npm run start\"",
+    "frontend": "concurrently \"cd frontend\" \"npm run dev\"",
+    "app": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
